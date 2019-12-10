@@ -11,7 +11,35 @@
 		543D1E4523A050AB00752BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E4423A050AB00752BA7 /* ViewController.swift */; };
 		543D1E4723A050AE00752BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543D1E4623A050AE00752BA7 /* Assets.xcassets */; };
 		543D1E4A23A050AE00752BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543D1E4823A050AE00752BA7 /* Main.storyboard */; };
+		543D1E5923A0519700752BA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543D1E5823A0519700752BA7 /* Cocoa.framework */; };
+		543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */; };
+		543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */; };
+		543D1E6323A0519700752BA7 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		543D1E6123A0519700752BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543D1E3723A050AB00752BA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 543D1E5523A0519700752BA7;
+			remoteInfo = SourceEditorExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		543D1E6423A0519700752BA7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				543D1E6323A0519700752BA7 /* SourceEditorExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		543D1E3F23A050AB00752BA7 /* EvaluateForXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaluateForXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +49,12 @@
 		543D1E4923A050AE00752BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		543D1E4B23A050AE00752BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543D1E4C23A050AE00752BA7 /* EvaluateForXcode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EvaluateForXcode.entitlements; sourceTree = "<group>"; };
+		543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SourceEditorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		543D1E5823A0519700752BA7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		543D1E5F23A0519700752BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543D1E6023A0519700752BA7 /* SourceEditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceEditorExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		543D1E5323A0519700752BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543D1E5923A0519700752BA7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				543D1E4123A050AB00752BA7 /* EvaluateForXcode */,
+				543D1E5A23A0519700752BA7 /* SourceEditorExtension */,
+				543D1E5723A0519700752BA7 /* Frameworks */,
 				543D1E4023A050AB00752BA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				543D1E3F23A050AB00752BA7 /* EvaluateForXcode.app */,
+				543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +108,25 @@
 			path = EvaluateForXcode;
 			sourceTree = "<group>";
 		};
+		543D1E5723A0519700752BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				543D1E5823A0519700752BA7 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		543D1E5A23A0519700752BA7 /* SourceEditorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */,
+				543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */,
+				543D1E5F23A0519700752BA7 /* Info.plist */,
+				543D1E6023A0519700752BA7 /* SourceEditorExtension.entitlements */,
+			);
+			path = SourceEditorExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +137,34 @@
 				543D1E3B23A050AB00752BA7 /* Sources */,
 				543D1E3C23A050AB00752BA7 /* Frameworks */,
 				543D1E3D23A050AB00752BA7 /* Resources */,
+				543D1E6423A0519700752BA7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				543D1E6223A0519700752BA7 /* PBXTargetDependency */,
 			);
 			name = EvaluateForXcode;
 			productName = EvaluateForXcode;
 			productReference = 543D1E3F23A050AB00752BA7 /* EvaluateForXcode.app */;
 			productType = "com.apple.product-type.application";
+		};
+		543D1E5523A0519700752BA7 /* SourceEditorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543D1E6723A0519700752BA7 /* Build configuration list for PBXNativeTarget "SourceEditorExtension" */;
+			buildPhases = (
+				543D1E5223A0519700752BA7 /* Sources */,
+				543D1E5323A0519700752BA7 /* Frameworks */,
+				543D1E5423A0519700752BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SourceEditorExtension;
+			productName = SourceEditorExtension;
+			productReference = 543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +177,9 @@
 				ORGANIZATIONNAME = "Iulian Onofrei";
 				TargetAttributes = {
 					543D1E3E23A050AB00752BA7 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					543D1E5523A0519700752BA7 = {
 						CreatedOnToolsVersion = 11.2;
 					};
 				};
@@ -112,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				543D1E3E23A050AB00752BA7 /* EvaluateForXcode */,
+				543D1E5523A0519700752BA7 /* SourceEditorExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +210,13 @@
 			files = (
 				543D1E4723A050AE00752BA7 /* Assets.xcassets in Resources */,
 				543D1E4A23A050AE00752BA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543D1E5423A0519700752BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +232,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		543D1E5223A0519700752BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */,
+				543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		543D1E6223A0519700752BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 543D1E5523A0519700752BA7 /* SourceEditorExtension */;
+			targetProxy = 543D1E6123A0519700752BA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		543D1E4823A050AE00752BA7 /* Main.storyboard */ = {
@@ -268,6 +379,7 @@
 		543D1E5023A050AE00752BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EvaluateForXcode/EvaluateForXcode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +400,7 @@
 		543D1E5123A050AE00752BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EvaluateForXcode/EvaluateForXcode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +414,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iulianonofrei.EvaluateForXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		543D1E6523A0519700752BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SourceEditorExtension/SourceEditorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X7DX44X75B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iulianonofrei.EvaluateForXcode.SourceEditorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		543D1E6623A0519700752BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SourceEditorExtension/SourceEditorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X7DX44X75B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iulianonofrei.EvaluateForXcode.SourceEditorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,6 +477,15 @@
 			buildConfigurations = (
 				543D1E5023A050AE00752BA7 /* Debug */,
 				543D1E5123A050AE00752BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543D1E6723A0519700752BA7 /* Build configuration list for PBXNativeTarget "SourceEditorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543D1E6523A0519700752BA7 /* Debug */,
+				543D1E6623A0519700752BA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
