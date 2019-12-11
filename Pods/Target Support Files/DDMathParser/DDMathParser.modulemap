@@ -1,0 +1,6 @@
+module MathParser {
+  umbrella header "DDMathParser-umbrella.h"
+
+  export *
+  module * { export * }
+}

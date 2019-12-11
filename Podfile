@@ -4,4 +4,5 @@ target 'EvaluateForXcode' do
 end
 
 target 'SourceEditorExtension' do
+    pod 'DDMathParser', git: 'https://github.com/davedelong/DDMathParser', branch: 'master'
 end

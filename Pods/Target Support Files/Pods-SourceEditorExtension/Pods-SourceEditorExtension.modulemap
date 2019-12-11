@@ -1,0 +1,6 @@
+module Pods_SourceEditorExtension {
+  umbrella header "Pods-SourceEditorExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
