@@ -15,6 +15,8 @@
 		543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */; };
 		543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */; };
 		543D1E6323A0519700752BA7 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70C49C5579D51D8DFB2B8F7D /* libPods-EvaluateForXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */; };
+		7DD5E95F553594A6E985B45D /* libPods-SourceEditorExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D02620E099AA3E16F05C28A /* Pods-SourceEditorExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceEditorExtension.release.xcconfig"; path = "Target Support Files/Pods-SourceEditorExtension/Pods-SourceEditorExtension.release.xcconfig"; sourceTree = "<group>"; };
+		2AECC0C130E90E42A8F5B413 /* Pods-EvaluateForXcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaluateForXcode.debug.xcconfig"; path = "Target Support Files/Pods-EvaluateForXcode/Pods-EvaluateForXcode.debug.xcconfig"; sourceTree = "<group>"; };
 		543D1E3F23A050AB00752BA7 /* EvaluateForXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaluateForXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		543D1E4223A050AB00752BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		543D1E4423A050AB00752BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,10 @@
 		543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		543D1E5F23A0519700752BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543D1E6023A0519700752BA7 /* SourceEditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceEditorExtension.entitlements; sourceTree = "<group>"; };
+		586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SourceEditorExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceEditorExtension.debug.xcconfig"; path = "Target Support Files/Pods-SourceEditorExtension/Pods-SourceEditorExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C9A9A62F07FC7E9AA1EDBB4E /* Pods-EvaluateForXcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaluateForXcode.release.xcconfig"; path = "Target Support Files/Pods-EvaluateForXcode/Pods-EvaluateForXcode.release.xcconfig"; sourceTree = "<group>"; };
+		FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EvaluateForXcode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C49C5579D51D8DFB2B8F7D /* libPods-EvaluateForXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543D1E5923A0519700752BA7 /* Cocoa.framework in Frameworks */,
+				7DD5E95F553594A6E985B45D /* libPods-SourceEditorExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				543D1E5A23A0519700752BA7 /* SourceEditorExtension */,
 				543D1E5723A0519700752BA7 /* Frameworks */,
 				543D1E4023A050AB00752BA7 /* Products */,
+				8712D82C2F4D46087C6D8D1E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				543D1E5823A0519700752BA7 /* Cocoa.framework */,
+				FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */,
+				586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +140,18 @@
 			path = SourceEditorExtension;
 			sourceTree = "<group>";
 		};
+		8712D82C2F4D46087C6D8D1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AECC0C130E90E42A8F5B413 /* Pods-EvaluateForXcode.debug.xcconfig */,
+				C9A9A62F07FC7E9AA1EDBB4E /* Pods-EvaluateForXcode.release.xcconfig */,
+				805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */,
+				0D02620E099AA3E16F05C28A /* Pods-SourceEditorExtension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 543D1E4F23A050AE00752BA7 /* Build configuration list for PBXNativeTarget "EvaluateForXcode" */;
 			buildPhases = (
+				06F1FAFA3BA59EBA7D8186BA /* [CP] Check Pods Manifest.lock */,
 				543D1E3B23A050AB00752BA7 /* Sources */,
 				543D1E3C23A050AB00752BA7 /* Frameworks */,
 				543D1E3D23A050AB00752BA7 /* Resources */,
@@ -153,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 543D1E6723A0519700752BA7 /* Build configuration list for PBXNativeTarget "SourceEditorExtension" */;
 			buildPhases = (
+				1F19608F04434A5439DD5968 /* [CP] Check Pods Manifest.lock */,
 				543D1E5223A0519700752BA7 /* Sources */,
 				543D1E5323A0519700752BA7 /* Frameworks */,
 				543D1E5423A0519700752BA7 /* Resources */,
@@ -221,6 +248,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F1FAFA3BA59EBA7D8186BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvaluateForXcode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F19608F04434A5439DD5968 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SourceEditorExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		543D1E3B23A050AB00752BA7 /* Sources */ = {
@@ -378,6 +452,7 @@
 		};
 		543D1E5023A050AE00752BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AECC0C130E90E42A8F5B413 /* Pods-EvaluateForXcode.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -399,6 +474,7 @@
 		};
 		543D1E5123A050AE00752BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A9A62F07FC7E9AA1EDBB4E /* Pods-EvaluateForXcode.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -420,6 +496,7 @@
 		};
 		543D1E6523A0519700752BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SourceEditorExtension/SourceEditorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +518,7 @@
 		};
 		543D1E6623A0519700752BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D02620E099AA3E16F05C28A /* Pods-SourceEditorExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SourceEditorExtension/SourceEditorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
