@@ -14,7 +14,7 @@
 		543D1E5923A0519700752BA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543D1E5823A0519700752BA7 /* Cocoa.framework */; };
 		543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */; };
 		543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */; };
-		543D1E6323A0519700752BA7 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		543D1E6323A0519700752BA7 /* Evaluate.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* Evaluate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		70C49C5579D51D8DFB2B8F7D /* libPods-EvaluateForXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */; };
 		7DD5E95F553594A6E985B45D /* libPods-SourceEditorExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				543D1E6323A0519700752BA7 /* SourceEditorExtension.appex in Embed App Extensions */,
+				543D1E6323A0519700752BA7 /* Evaluate.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 		543D1E4923A050AE00752BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		543D1E4B23A050AE00752BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543D1E4C23A050AE00752BA7 /* EvaluateForXcode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EvaluateForXcode.entitlements; sourceTree = "<group>"; };
-		543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SourceEditorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		543D1E5623A0519700752BA7 /* Evaluate.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Evaluate.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		543D1E5823A0519700752BA7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				543D1E3F23A050AB00752BA7 /* EvaluateForXcode.app */,
-				543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */,
+				543D1E5623A0519700752BA7 /* Evaluate.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +148,6 @@
 				805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */,
 				0D02620E099AA3E16F05C28A /* Pods-SourceEditorExtension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,7 +189,7 @@
 			);
 			name = SourceEditorExtension;
 			productName = SourceEditorExtension;
-			productReference = 543D1E5623A0519700752BA7 /* SourceEditorExtension.appex */;
+			productReference = 543D1E5623A0519700752BA7 /* Evaluate.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -510,7 +509,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iulianonofrei.EvaluateForXcode.SourceEditorExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Evaluate;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -532,7 +531,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iulianonofrei.EvaluateForXcode.SourceEditorExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Evaluate;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
