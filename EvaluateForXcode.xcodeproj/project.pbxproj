@@ -15,6 +15,8 @@
 		543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */; };
 		543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */; };
 		543D1E6323A0519700752BA7 /* Evaluate.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* Evaluate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		549FBC6F23B7FCCE001834EB /* IOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FBC6E23B7FCCE001834EB /* IOLabel.swift */; };
+		549FBC7123B7FCE4001834EB /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FBC7023B7FCE4001834EB /* Step.swift */; };
 		70C49C5579D51D8DFB2B8F7D /* libPods-EvaluateForXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */; };
 		7DD5E95F553594A6E985B45D /* libPods-SourceEditorExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		543D1E5F23A0519700752BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543D1E6023A0519700752BA7 /* SourceEditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceEditorExtension.entitlements; sourceTree = "<group>"; };
+		549FBC6E23B7FCCE001834EB /* IOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOLabel.swift; sourceTree = "<group>"; };
+		549FBC7023B7FCE4001834EB /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SourceEditorExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceEditorExtension.debug.xcconfig"; path = "Target Support Files/Pods-SourceEditorExtension/Pods-SourceEditorExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A9A62F07FC7E9AA1EDBB4E /* Pods-EvaluateForXcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaluateForXcode.release.xcconfig"; path = "Target Support Files/Pods-EvaluateForXcode/Pods-EvaluateForXcode.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				543D1E4223A050AB00752BA7 /* AppDelegate.swift */,
+				549FBC6E23B7FCCE001834EB /* IOLabel.swift */,
+				549FBC7023B7FCE4001834EB /* Step.swift */,
 				543D1E4423A050AB00752BA7 /* ViewController.swift */,
 				543D1E4623A050AE00752BA7 /* Assets.xcassets */,
 				543D1E4823A050AE00752BA7 /* Main.storyboard */,
@@ -300,6 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549FBC6F23B7FCCE001834EB /* IOLabel.swift in Sources */,
+				549FBC7123B7FCE4001834EB /* Step.swift in Sources */,
 				543D1E4523A050AB00752BA7 /* ViewController.swift in Sources */,
 				543D1E4323A050AB00752BA7 /* AppDelegate.swift in Sources */,
 			);

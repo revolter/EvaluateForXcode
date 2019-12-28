@@ -684,8 +684,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Evaluate for Xcode" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Evaluate for Xcode" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -706,13 +706,82 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EvaluateForXcode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="668" height="596"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLa-6c-M4T" userLabel="Stack View - Content">
+                                <rect key="frame" x="0.0" y="20" width="668" height="576"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rW-zC-8Iz" userLabel="Stack View - Step">
+                                        <rect key="frame" x="0.0" y="21" width="668" height="555"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QAk-Le-B8t" customClass="IOLabel" customModule="EvaluateForXcode" customModuleProvider="target">
+                                                <rect key="frame" x="228" y="536" width="213" height="19"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="1. Open System Preferences" usesSingleLineMode="YES" id="1u2-nc-g8P">
+                                                    <font key="font" metaFont="system" size="16"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o0B-d4-fg4">
+                                                <rect key="frame" x="0.0" y="0.0" width="668" height="516"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="help_1-image-668x516" id="yB9-V8-qGW"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="o0B-d4-fg4" firstAttribute="width" secondItem="4rW-zC-8Iz" secondAttribute="width" id="Su9-iC-fVq"/>
+                                        </constraints>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eI7-Qy-GTc" userLabel="Continue">
+                                        <rect key="frame" x="287" y="-7" width="95" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AcG-ZS-e3s">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onContinueClick:" target="XfG-lQ-9wD" id="fA9-6c-Hwi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4rW-zC-8Iz" firstAttribute="width" secondItem="yLa-6c-M4T" secondAttribute="width" id="lRs-f9-WTj"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yLa-6c-M4T" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="IWG-Ue-o3Q"/>
+                            <constraint firstItem="yLa-6c-M4T" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="lNy-Za-FOd"/>
+                            <constraint firstItem="yLa-6c-M4T" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ngF-si-TaA"/>
+                            <constraint firstAttribute="bottom" secondItem="yLa-6c-M4T" secondAttribute="bottom" constant="20" id="qjC-05-egH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewScreenshot" destination="o0B-d4-fg4" id="Zhg-bN-iFH"/>
+                        <outlet property="textFieldTitle" destination="QAk-Le-B8t" id="Jiv-14-ekK"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="901"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="help_1-image-668x516" width="668" height="516"/>
+    </resources>
 </document>
