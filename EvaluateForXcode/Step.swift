@@ -19,9 +19,7 @@ class Step {
 				.foregroundColor: NSColor.white
 			]
 
-			let merge: (_: Any, _: Any) -> Any = { (_, new) in
-				return new
-			}
+			let merge: (_: Any, _: Any) -> Any = { $1 }
 
 			let thinAttributes: [NSAttributedString.Key: Any] = [
 				.font: NSFont.systemFont(ofSize: 16, weight: .thin)
