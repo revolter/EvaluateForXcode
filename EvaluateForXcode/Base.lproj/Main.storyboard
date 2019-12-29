@@ -763,6 +763,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonContinue" destination="eI7-Qy-GTc" id="lxp-AC-OH0"/>
                         <outlet property="imageViewScreenshot" destination="o0B-d4-fg4" id="Zhg-bN-iFH"/>
                         <outlet property="textFieldTitle" destination="QAk-Le-B8t" id="Jiv-14-ekK"/>
                     </connections>

@@ -14,6 +14,7 @@ class ViewController: NSViewController {
 
 	@IBOutlet var textFieldTitle: IOLabel!
 	@IBOutlet var imageViewScreenshot: NSImageView!
+	@IBOutlet var buttonContinue: NSButton!
 
 	// MARK: - Globals
 
@@ -50,11 +51,16 @@ class ViewController: NSViewController {
 		}
 	}
 
+	private func isLastStep() -> Bool {
+		return self.currentStepIndex == self.steps.count - 1
+	}
+
 	private func updateViewsForCurrentStep() {
 		let step = self.steps[self.currentStepIndex]
 
 		self.textFieldTitle.attributedStringValue = step.text
 		self.imageViewScreenshot.image = step.image
+		self.buttonContinue.title = self.isLastStep() ? "Start over" : "Continue"
 
 		self.view.layoutSubtreeIfNeeded()
 
