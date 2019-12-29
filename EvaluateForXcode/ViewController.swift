@@ -22,11 +22,11 @@ class ViewController: NSViewController {
 		get {
 			return [
 				Step(1, "Open", "System Preferences", "help_1-image-668x516"),
-				Step(2, "Select", "Extensions", "help_2-image-668x508"),
-				Step(3, "Select", "Xcode Source Editor", "help_3-image-668x508"),
-				Step(4, "Enable", "Evaluate", "help_4-image-668x508"),
-				Step(5, "Select", "a mathematical expression", "help_5-image-936x357"),
-				Step(6, "Select", "Editor > Evaluate > Parse", "help_6-image-449x444"),
+				Step(2, "Select", "Extensions", "help_2-image-668x470"),
+				Step(3, "Select", "Xcode Source Editor", "help_3-image-668x470"),
+				Step(4, "Enable", "Evaluate", "help_4-image-668x470"),
+				Step(5, "Select", "a mathematical expression", "help_5-image-625x221"),
+				Step(6, "Select", "Editor > Evaluate > Parse", "help_6-image-449x300"),
 			]
 		}
 	}
