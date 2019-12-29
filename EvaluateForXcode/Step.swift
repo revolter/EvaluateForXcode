@@ -16,7 +16,7 @@ class Step {
 			let fontManager = NSFontManager.shared
 
 			let baseAttributes: [NSAttributedString.Key: Any] = [
-				.foregroundColor: NSColor.white
+				.foregroundColor: NSColor.labelColor
 			]
 
 			let merge: (_: Any, _: Any) -> Any = { $1 }
