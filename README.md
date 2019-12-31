@@ -7,3 +7,7 @@ A simple extension for Xcode that allows you to evaluate mathematical expression
 # Acknowledgment
 
 This was inspired by a similar extension for Sublime Text 2: https://github.com/jbrooksuk/Sublime-Evaluate.
+
+# License
+
+[GPL](LICENSE)
