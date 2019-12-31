@@ -66,6 +66,7 @@
 		549FBC7423BAD998001834EB /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Gemfile; sourceTree = "<group>"; };
 		549FBC7523BAD998001834EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		549FBC7623BAD998001834EB /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		549FBC7A23BADACE001834EB /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SourceEditorExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceEditorExtension.debug.xcconfig"; path = "Target Support Files/Pods-SourceEditorExtension/Pods-SourceEditorExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A9A62F07FC7E9AA1EDBB4E /* Pods-EvaluateForXcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaluateForXcode.release.xcconfig"; path = "Target Support Files/Pods-EvaluateForXcode/Pods-EvaluateForXcode.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 			children = (
 				543D1E4123A050AB00752BA7 /* EvaluateForXcode */,
 				543D1E5A23A0519700752BA7 /* SourceEditorExtension */,
+				549FBC7A23BADACE001834EB /* CHANGELOG.md */,
 				549FBC7423BAD998001834EB /* Gemfile */,
 				549FBC7623BAD998001834EB /* Podfile */,
 				549FBC7523BAD998001834EB /* README.md */,
