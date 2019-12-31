@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2019-12-31
+
+### Changed
+
+- Updated the app name (007a2e20)
+
 ## [1.0.4] - 2019-12-31
 
 ### Added
@@ -60,7 +66,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added DDMathParser pod version 2.0.0 (master) (c9a7392b)
 - Added CocoaPods gem version 1.8.4 (6a89c0bd)
 
-[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.4...HEAD
+[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.5...HEAD
+[1.0.5]: https://github.com/revolter/EvaluateForXcode/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/revolter/EvaluateForXcode/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/revolter/EvaluateForXcode/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/revolter/EvaluateForXcode/compare/1.0.1...1.0.2
