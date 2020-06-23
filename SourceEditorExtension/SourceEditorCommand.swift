@@ -16,9 +16,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
 		let buffer = invocation.buffer
 
-		buffer.selections.forEach { (selection) in
-			let selection = selection as! XCSourceTextRange
-
+		for case let selection as XCSourceTextRange in buffer.selections {
 			let startLine = selection.start.line
 			let startColumn = selection.start.column
 
@@ -78,7 +76,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 						// The last line of the selection
 
 						if endColumn == line.length - 1 {
-							// The entire line was selected, so we remove it completely.
+							// The entire line was selected, so we remove it
+							// completely.
 						} else {
 							newLine = line.substring(from: endColumn)
 						}
