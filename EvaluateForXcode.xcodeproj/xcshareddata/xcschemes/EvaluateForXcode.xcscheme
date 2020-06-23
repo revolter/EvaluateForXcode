@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "543D1E3E23A050AB00752BA7"
-               BuildableName = "EvaluateForXcode.app"
+               BuildableName = "Evaluate for Xcode.app"
                BlueprintName = "EvaluateForXcode"
                ReferencedContainer = "container:EvaluateForXcode.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "543D1E3E23A050AB00752BA7"
-            BuildableName = "EvaluateForXcode.app"
+            BuildableName = "Evaluate for Xcode.app"
             BlueprintName = "EvaluateForXcode"
             ReferencedContainer = "container:EvaluateForXcode.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "543D1E3E23A050AB00752BA7"
-            BuildableName = "EvaluateForXcode.app"
+            BuildableName = "Evaluate for Xcode.app"
             BlueprintName = "EvaluateForXcode"
             ReferencedContainer = "container:EvaluateForXcode.xcodeproj">
          </BuildableReference>
