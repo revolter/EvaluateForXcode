@@ -16,7 +16,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
 		let buffer = invocation.buffer
 
-		for case let selection as XCSourceTextRange in buffer.selections {
+		for case let selection as XCSourceTextRange in buffer.selections.reversed() {
 			let startLine = selection.start.line
 			let startColumn = selection.start.column
 
