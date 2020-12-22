@@ -13,7 +13,7 @@ import MathParser
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
-	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
+	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
 		let buffer = invocation.buffer
 
 		for case let selection as XCSourceTextRange in buffer.selections {
