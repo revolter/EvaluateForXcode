@@ -53,7 +53,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 			do {
 				let resultValue = try text.evaluate()
-				let result = String(resultValue)
+				let isInteger = resultValue.truncatingRemainder(dividingBy: 1) == 0
+				let result = isInteger ? String(format: "%.0f", resultValue) : String(resultValue)
 
 				for index in stride(from: endLine, to: startLine - 1, by: -1) {
 					let line = buffer.lines[index] as! NSString
