@@ -95,6 +95,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 					}
 				}
 			} catch {
+				completionHandler(error)
+
 				return
 			}
 		}
