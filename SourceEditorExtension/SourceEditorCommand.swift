@@ -11,12 +11,22 @@ import XcodeKit
 
 import MathParser
 
+enum EvaluateError: Error {
+	case invalidSelections
+}
+
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
 		let buffer = invocation.buffer
 
-		for case let selection as XCSourceTextRange in buffer.selections.reversed() {
+		guard let selections = buffer.selections.reversed() as? [XCSourceTextRange] else {
+			completionHandler(EvaluateError.invalidSelections)
+
+			return
+		}
+
+		for selection in selections {
 			let startLine = selection.start.line
 			let startColumn = selection.start.column
 
