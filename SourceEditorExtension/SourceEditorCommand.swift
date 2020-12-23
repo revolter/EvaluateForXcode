@@ -47,8 +47,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 				}
 			}
 
-			guard !text.isEmpty else {
-				return
+			if text.isEmpty {
+				continue
 			}
 
 			do {
