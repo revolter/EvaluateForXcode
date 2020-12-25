@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54375DBB25962B4000671E18 /* XCSourceTextRange+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54375DBA25962B4000671E18 /* XCSourceTextRange+Update.swift */; };
+		54375DBF2596442700671E18 /* XCSourceTextPosition+LineLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54375DBE2596442700671E18 /* XCSourceTextPosition+LineLength.swift */; };
 		543D1E4323A050AB00752BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E4223A050AB00752BA7 /* AppDelegate.swift */; };
 		543D1E4523A050AB00752BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E4423A050AB00752BA7 /* ViewController.swift */; };
 		543D1E4723A050AE00752BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543D1E4623A050AE00752BA7 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		0D02620E099AA3E16F05C28A /* Pods-SourceEditorExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceEditorExtension.release.xcconfig"; path = "Target Support Files/Pods-SourceEditorExtension/Pods-SourceEditorExtension.release.xcconfig"; sourceTree = "<group>"; };
 		2AECC0C130E90E42A8F5B413 /* Pods-EvaluateForXcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaluateForXcode.debug.xcconfig"; path = "Target Support Files/Pods-EvaluateForXcode/Pods-EvaluateForXcode.debug.xcconfig"; sourceTree = "<group>"; };
+		54375DBA25962B4000671E18 /* XCSourceTextRange+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextRange+Update.swift"; sourceTree = "<group>"; };
+		54375DBE2596442700671E18 /* XCSourceTextPosition+LineLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextPosition+LineLength.swift"; sourceTree = "<group>"; };
 		543D1E3F23A050AB00752BA7 /* Evaluate for Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Evaluate for Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		543D1E4223A050AB00752BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		543D1E4423A050AB00752BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,10 +166,12 @@
 		543D1E5A23A0519700752BA7 /* SourceEditorExtension */ = {
 			isa = PBXGroup;
 			children = (
-				543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */,
-				543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */,
 				543D1E5F23A0519700752BA7 /* Info.plist */,
+				543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */,
 				543D1E6023A0519700752BA7 /* SourceEditorExtension.entitlements */,
+				543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */,
+				54375DBE2596442700671E18 /* XCSourceTextPosition+LineLength.swift */,
+				54375DBA25962B4000671E18 /* XCSourceTextRange+Update.swift */,
 			);
 			path = SourceEditorExtension;
 			sourceTree = "<group>";
@@ -343,6 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */,
+				54375DBF2596442700671E18 /* XCSourceTextPosition+LineLength.swift in Sources */,
+				54375DBB25962B4000671E18 /* XCSourceTextRange+Update.swift in Sources */,
 				543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

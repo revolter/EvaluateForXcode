@@ -26,7 +26,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 			return
 		}
 
-		for selection in selections {
+		for (index, selection) in selections.enumerated() {
 			let startLine = selection.start.line
 			let startColumn = selection.start.column
 
@@ -65,6 +65,40 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 				let resultValue = try text.evaluate()
 				let isInteger = resultValue.truncatingRemainder(dividingBy: 1) == 0
 				let result = isInteger ? String(format: "%.0f", resultValue) : String(resultValue)
+				let deltaWidth = result.count - text.count
+
+				let isResultBigger = deltaWidth > 0
+				let isResultSmaller = deltaWidth < 0
+
+				let updateSelections: () -> Void = {
+					guard let lines = buffer.lines as? [NSString] else {
+						return
+					}
+
+					let selectionEndLine = selection.end.line
+					let selectionEndColumn = selection.end.column
+					let isSelectionOnMultipleLines = selection.start.line != selectionEndLine
+
+					selection.updateEnd(byColumns: deltaWidth, withLines: lines)
+
+					let lastLineDeltaWidth = isSelectionOnMultipleLines ? -selectionEndColumn : deltaWidth
+
+					for previousIndex in 0..<index {
+						let previousSelection = selections[previousIndex]
+
+						if previousSelection.start.line <= selectionEndLine {
+							previousSelection.updateStart(byColumns: lastLineDeltaWidth, withLines: lines)
+						}
+
+						if previousSelection.end.line <= selectionEndLine {
+							previousSelection.updateEnd(byColumns: lastLineDeltaWidth, withLines: lines)
+						}
+					}
+				}
+
+				if isResultSmaller {
+					updateSelections()
+				}
 
 				for index in stride(from: endLine, to: startLine - 1, by: -1) {
 					let line = buffer.lines[index] as! NSString
@@ -103,6 +137,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 						buffer.lines.removeObject(at: index)
 					}
+				}
+
+				if isResultBigger {
+					updateSelections()
 				}
 			} catch {
 				completionHandler(error)
