@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 2020-12-25
+
+### Fixed
+
+- Fixed incorrect selections after evaluations (0e3ec349)
+- Fixed selections not evaluating when a previous one was invalid (f4457540)
+- Fixed integer results being written as doubles (3a082a67)
+- Fixed multiple expressions on the same line not evaluating (d84d90f2)
+
 ## [1.0.5] - 2019-12-31
 
 ### Changed
@@ -66,7 +75,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added DDMathParser pod version 2.0.0 (master) (c9a7392b)
 - Added CocoaPods gem version 1.8.4 (6a89c0bd)
 
-[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.5...HEAD
+[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.6...HEAD
+[1.0.6]: https://github.com/revolter/EvaluateForXcode/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/revolter/EvaluateForXcode/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/revolter/EvaluateForXcode/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/revolter/EvaluateForXcode/compare/1.0.2...1.0.3
