@@ -17,6 +17,8 @@
 		543D1E6323A0519700752BA7 /* Evaluate.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* Evaluate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		549FBC6F23B7FCCE001834EB /* IOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FBC6E23B7FCCE001834EB /* IOLabel.swift */; };
 		549FBC7123B7FCE4001834EB /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FBC7023B7FCE4001834EB /* Step.swift */; };
+		54B63A8F2578DA6100B77D66 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B63A8E2578DA6100B77D66 /* XcodeKit.framework */; };
+		54B63A902578DA6100B77D66 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54B63A8E2578DA6100B77D66 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70C49C5579D51D8DFB2B8F7D /* libPods-EvaluateForXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */; };
 		7DD5E95F553594A6E985B45D /* libPods-SourceEditorExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54B63A912578DA6100B77D66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54B63A902578DA6100B77D66 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +80,7 @@
 		549FBC7523BAD998001834EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		549FBC7623BAD998001834EB /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		549FBC7A23BADACE001834EB /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		54B63A8E2578DA6100B77D66 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SourceEditorExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805398D9CF2EA3589C96F931 /* Pods-SourceEditorExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceEditorExtension.debug.xcconfig"; path = "Target Support Files/Pods-SourceEditorExtension/Pods-SourceEditorExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A9A62F07FC7E9AA1EDBB4E /* Pods-EvaluateForXcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaluateForXcode.release.xcconfig"; path = "Target Support Files/Pods-EvaluateForXcode/Pods-EvaluateForXcode.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B63A8F2578DA6100B77D66 /* XcodeKit.framework in Frameworks */,
 				543D1E5923A0519700752BA7 /* Cocoa.framework in Frameworks */,
 				7DD5E95F553594A6E985B45D /* libPods-SourceEditorExtension.a in Frameworks */,
 			);
@@ -137,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				543D1E5823A0519700752BA7 /* Cocoa.framework */,
+				54B63A8E2578DA6100B77D66 /* XcodeKit.framework */,
 				FB7D96A947E8EC065C85C147 /* libPods-EvaluateForXcode.a */,
 				586766E90A5ECE1E8C8C3D32 /* libPods-SourceEditorExtension.a */,
 			);
@@ -196,6 +212,7 @@
 				543D1E5223A0519700752BA7 /* Sources */,
 				543D1E5323A0519700752BA7 /* Frameworks */,
 				543D1E5423A0519700752BA7 /* Resources */,
+				54B63A912578DA6100B77D66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
