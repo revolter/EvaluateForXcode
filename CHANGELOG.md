@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2021-01-02
+
+### Changed
+
+- Updated the app icon for macOS Big Sur (fc18b560)
+
 ## [1.0.6] - 2020-12-25
 
 ### Fixed
@@ -75,7 +81,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added DDMathParser pod version 2.0.0 (master) (c9a7392b)
 - Added CocoaPods gem version 1.8.4 (6a89c0bd)
 
-[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.6...HEAD
+[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.7...HEAD
+[1.0.7]: https://github.com/revolter/EvaluateForXcode/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/revolter/EvaluateForXcode/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/revolter/EvaluateForXcode/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/revolter/EvaluateForXcode/compare/1.0.3...1.0.4
