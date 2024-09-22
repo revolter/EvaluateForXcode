@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		543D1E5923A0519700752BA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543D1E5823A0519700752BA7 /* Cocoa.framework */; };
 		543D1E5C23A0519700752BA7 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5B23A0519700752BA7 /* SourceEditorExtension.swift */; };
 		543D1E5E23A0519700752BA7 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D1E5D23A0519700752BA7 /* SourceEditorCommand.swift */; };
-		543D1E6323A0519700752BA7 /* Evaluate.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* Evaluate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		543D1E6323A0519700752BA7 /* Evaluate.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 543D1E5623A0519700752BA7 /* Evaluate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		549FBC6F23B7FCCE001834EB /* IOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FBC6E23B7FCCE001834EB /* IOLabel.swift */; };
 		549FBC7123B7FCE4001834EB /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FBC7023B7FCE4001834EB /* Step.swift */; };
 		54B63A8F2578DA6100B77D66 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B63A8E2578DA6100B77D66 /* XcodeKit.framework */; };
@@ -36,15 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		543D1E6423A0519700752BA7 /* Embed App Extensions */ = {
+		543D1E6423A0519700752BA7 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				543D1E6323A0519700752BA7 /* Evaluate.appex in Embed App Extensions */,
+				543D1E6323A0519700752BA7 /* Evaluate.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		54B63A912578DA6100B77D66 /* Embed Frameworks */ = {
@@ -198,7 +198,7 @@
 				543D1E3B23A050AB00752BA7 /* Sources */,
 				543D1E3C23A050AB00752BA7 /* Frameworks */,
 				543D1E3D23A050AB00752BA7 /* Resources */,
-				543D1E6423A0519700752BA7 /* Embed App Extensions */,
+				543D1E6423A0519700752BA7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -235,8 +235,9 @@
 		543D1E3723A050AB00752BA7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Iulian Onofrei";
 				TargetAttributes = {
 					543D1E3E23A050AB00752BA7 = {
@@ -403,6 +404,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -411,9 +413,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 8;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -465,6 +469,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -473,9 +478,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 8;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
