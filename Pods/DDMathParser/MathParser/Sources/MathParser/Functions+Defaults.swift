@@ -146,7 +146,12 @@ extension Function {
         
         let arg1 = try state.evaluator.evaluate(state.arguments[0], substitutions: state.substitutions)
         
-        return Darwin.pow(arg1, 1.0/3.0)
+        if arg1 < 0 {
+            let root = Darwin.pow(-arg1, 1.0/3.0)
+            return -root
+        } else {
+            return Darwin.pow(arg1, 1.0/3.0)
+        }
     })
     
     public static let nthroot = Function(name: "nthroot", evaluator: { state throws -> Double in
@@ -174,15 +179,23 @@ extension Function {
             let argValue = try state.evaluator.evaluate(arg, substitutions: state.substitutions)
             argValues.append(argValue)
         }
-        
-        let lowerBound = argValues.count > 0 ? argValues[0] : Double.leastNormalMagnitude
-        let upperBound = argValues.count > 1 ? argValues[1] : Double.greatestFiniteMagnitude
+        var lowerBound = 0.0
+        var upperBound = 1.0
+        switch argValues.count {
+        case 1:
+            upperBound = argValues[0]
+        case 2:
+            lowerBound = argValues[0]
+            upperBound = argValues[1]
+        default:
+            break
+        }
         
         guard lowerBound < upperBound else { throw MathParserError(kind: .invalidArguments, range: state.expressionRange) }
         
         let range = upperBound - lowerBound
         
-        return (drand48().truncatingRemainder(dividingBy: range)) + lowerBound
+        return drand48() * range + lowerBound
     })
     
     public static let log = Function(name: "log", evaluator: { state throws -> Double in

@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DDMathParser:
-    :commit: 3f108b72c441de8ba73abf7fd3aab30c8af1e0f2
+    :commit: 2e067fc17c36f4298649b6681d52286fe4ca388e
     :git: https://github.com/davedelong/DDMathParser
 
 SPEC CHECKSUMS:
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8ecc3d676050e382ebefe3c9a4cda6d90effa226
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.15.2
