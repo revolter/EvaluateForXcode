@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2024-09-22
+
+### Changed
+
+- Project: Updated the DDMathParser pod to version 2.0.0 (2e067fc1) (a9480e33)
+
 ## [1.0.7] - 2021-01-02
 
 ### Changed
@@ -81,7 +87,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added DDMathParser pod version 2.0.0 (master) (c9a7392b)
 - Added CocoaPods gem version 1.8.4 (6a89c0bd)
 
-[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.7...HEAD
+[Unreleased]: https://github.com/revolter/EvaluateForXcode/compare/1.0.8...HEAD
+[1.0.8]: https://github.com/revolter/EvaluateForXcode/compare/1.0.6...1.0.8
 [1.0.7]: https://github.com/revolter/EvaluateForXcode/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/revolter/EvaluateForXcode/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/revolter/EvaluateForXcode/compare/1.0.4...1.0.5
